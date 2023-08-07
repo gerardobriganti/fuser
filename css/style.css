@@ -1,0 +1,417 @@
+/*! ---------Tipografia----------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&display=swap');
+
+
+/*!----------RESET-------------*/
+
+
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+
+/*!---------BODY--------------*/
+
+
+
+body {
+    background-color: rgb(32, 32, 32);
+    background-image: url(../img/IMG_8223.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+/*!  -------Header---------*/
+
+
+
+.flex__container{        
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 3px;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+
+.logo__fuser{
+    margin-left: 15px;
+    width: 6vh;
+    display: flex;
+    opacity: 0.8;
+}
+
+
+.logo__fuser:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+header nav{
+    display: flex;
+    align-items:center;
+}
+
+
+header nav ul{
+    list-style: none;
+}
+
+
+header nav ul li {
+    padding: 10px;
+}
+
+
+.boton{
+    background-color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.4em;
+    color: black;
+    border-radius: 3px;
+}
+
+
+.boton:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.03);
+    color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+    .boton{
+        padding: 0.4em 0.8em;
+        font-size: 0.8em;
+        }
+}
+
+
+
+/*!  -------Main---------*/
+
+
+h1{
+    color: rgb(227, 227, 227);
+    font-size: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align:center;
+}
+
+
+h2{
+    flex-direction: column;
+    color: rgb(227, 227, 227);
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align:center;
+}
+
+
+h2::first-letter{
+    color: deeppink;
+}
+
+
+main section h2 {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+main section p{
+    display: flex;
+    color: rgb(227, 227, 227);
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    font-size: 30px;
+}
+
+
+main div{
+    color: rgb(227, 227, 227) ;
+    display: block;
+}
+
+
+.parrafos{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between
+    align-items: center;
+    color: rgb(227, 227, 227)
+}
+
+
+h1::selection{
+    color: deeppink;
+}
+
+
+h2::selection{
+    color: deeppink;
+}
+
+
+p::selection{
+    color: deeppink;
+}
+
+
+.pedalmartin{
+    opacity: 0.8;
+}
+
+
+.carousel-inner{
+    text-align: center;
+}
+
+
+.galeria__integrantes{
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2vw;
+    margin-left: 2,5vw;
+}
+
+
+.galeria div img{
+    padding: 2%;
+}
+
+
+
+/*!  -------Seccion Nosotros---------*/
+
+
+.inicio__fuser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*!  -------Seccion Social---------*/
+
+
+.redes__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 6%;
+    padding: 2%
+}
+
+
+.redes__container div{
+    background-color: rgba(240, 248, 255, 0.561);
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.redes__container div:hover{
+    background-color: rgb(240, 248, 255);
+    transform: scale(1.03);
+}
+
+
+
+/*!  -------Seccion Merch---------*/
+
+
+.grid__container__merch{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.productos__merch{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: center;
+}
+
+
+.productos__merch img{
+    width: 300px;
+    height: 330px;
+}
+
+
+.productos__merch p{
+    margin-top: 5px;
+}
+
+
+.productos__merch div{
+    margin: 20px;
+    width: 305px;
+    height: 420px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.697);
+    border-radius: 4px;
+}
+
+
+.productos__merch div h3{
+    display: inline-block;
+    color: white;
+    font-size: medium;
+    background-color: deeppink;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+
+/*!  -------Seccion Nosotros---------*/
+
+
+
+.grid__contacto{
+    display: grid;
+    grid-template-columns: 800px 800px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.grid__contacto p {
+    display: inline-block;
+    color: white;
+}
+
+
+.mapa{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h3{
+    display: inline-block;
+}
+
+.ubicacion__banda{
+    width: 100%;
+}
+
+
+.datos{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(255, 255, 255, 0.51);
+    flex-direction: column;
+    width: 500px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+
+.datos p{
+    color: rgb(0, 0, 0);
+}
+
+
+/*!  -------Footer---------*/
+
+
+
+footer{
+    background-color: rgba(255, 255, 255, 0.161);
+    height: 120px;
+}
+
+
+.boton__arriba:hover{
+    color: deeppink;
+    font-weight: 600;
+}
+
+
+.boton__arriba{
+    display: block;
+    text-align: center;
+    border: 10px;
+}
+
+
+footer a{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(227, 227, 227);
+    text-decoration: none;
+}
+
+
+footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+footer div img{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.parrafo__footer{
+    background-color: rgb(33, 33, 33);
+    color: rgb(227, 227, 227);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
