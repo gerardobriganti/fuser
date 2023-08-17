@@ -120,31 +120,61 @@ header nav ul li {
 
 
 .boton{
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    padding: 8px;
-    font-size: 15px;
+    padding: 6px 30px 6px 30px;
+    margin: 2px 20px 2px 20px;
+    font-size: 17px;
     color: black;
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 1020px){
     .boton{
-        background-color: rgba(255, 255, 255, 0.822);
+        background-color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
-        padding: 5px;
-        font-size: 13px;
+        padding: 6px 20px 6px 20px;
+        margin: 2px 10px 2px 10px;
+        font-size: 14px;
         color: black;
-        border-radius: 2px;
+        border-radius: 7px;
     }
 }
 
 
+@media (max-width: 800px){
+    .boton{
+        background-color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        padding: 4px 10px 4px 10px;
+        margin: 2px 5px 2px 5px;
+        font-size: 14px;
+        color: black;
+        border-radius: 6px;
+    }
+}
+
+
+@media (max-width: 650px){
+    .boton{
+        background-color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        padding: 2px 5px 2px 5px;
+        margin: 2px 3px 2px 3px;
+        font-size: 12px;
+        color: black;
+        border-radius: 4px;
+    }
+}
+
 .boton:hover{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 20, 20);
+    font-size: 15px;
+    font-weight: 600;
     transform: scale(1.03);
-    color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
 }
 
 
@@ -325,6 +355,8 @@ p::selection{
 
 .pedalmartin{
     opacity: 0.8;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -434,6 +466,8 @@ p::selection{
 
 
 .redes__container{
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -456,10 +490,43 @@ p::selection{
 }
 
 
+@media (max-width: 1450px){
+    .redes__container {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-auto-rows: auto auto;
+        gap: 40px;
+        justify-content:space-evenly;
+        align-items: center;
+        border-radius: 6%;
+        padding: 2%
+    }
+    }
+
+
+    @media (max-width: 800px){
+        .redes__container {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: grid;
+            grid-template-columns: 350px;
+            grid-auto-rows: auto auto auto auto;
+            gap: 40px;
+            justify-content:space-evenly;
+            align-items: center;
+            border-radius: 6%;
+            padding: 2%
+        }
+        }
+
 .redes__container div img{
     width: 320px;
     height: auto;
 }
+
+
 
 /*!  -------Seccion Merch---------*/
 
@@ -547,8 +614,22 @@ p::selection{
 }
 
 
-/*!  -------Seccion Escribinos---------*/
+/*!  -------Seccion Agenda---------*/
 
+
+.agenda__fuser{
+    margin: 50px;
+}
+
+@media (max-width: 680px){
+    .agenda__fuser{
+        margin: 10px;
+    }
+}
+
+
+
+/*!  -------Seccion Escribinos---------*/
 
 
 .grid__contacto{
@@ -666,14 +747,21 @@ h3{
 
 footer{
     background-color: rgba(255, 255, 255, 0.161);
-    height: 120px;
+    height: 140px;
 }
 
 
 @media (max-width: 850px){
     footer{
         background-color: rgba(255, 255, 255, 0.161);
-        height: 90px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 730px){
+    footer{
+        background-color: rgba(255, 255, 255, 0.161);
+        height: 120px;
     }
 }
 
@@ -686,8 +774,14 @@ footer{
 
 .boton__arriba{
     display: block;
+    margin: 0 auto;
     text-align: center;
-    border: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 90px;
+    height: 30px;
+    border-radius: 6px;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
 
@@ -715,14 +809,54 @@ footer div{
     height: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+@media (max-width: 730px){
+    footer div{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+
+@media (max-width: 550px){
+    footer div{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 
 
 footer div img{
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     align-items: center;
-    margin: 20px;
+    margin: 10%;
+}
+
+
+@media (max-width: 730px){
+    footer div img{
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        margin: 10%;
+    }
 }
 
 
@@ -730,6 +864,8 @@ footer div img{
     background-color: black;
     height: 20px;
     margin-top: 30px;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
 
@@ -737,7 +873,16 @@ footer div img{
     .parrafo__footer{
         background-color: black;
         height: 15px;
-        margin-top: 5px;
+        margin-top: 25px;
+    }
+}
+
+
+@media (max-width: 850px){
+    .parrafo__footer{
+        background-color: black;
+        height: 15px;
+        margin-top: 15px;
     }
 }
 
@@ -751,6 +896,6 @@ footer div img{
 @media (max-width: 850px){
     .parrafo__footer p{
         color: white;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
