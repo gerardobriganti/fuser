@@ -1,0 +1,404 @@
+// body querys //
+
+@media (max-width: 1020px){
+    body {
+        background-color: nth($colores, 5 );
+        background-image: url(../img/IMG_8223.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.grid__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+// nav querys //
+
+@media (max-width: 600px){
+    body header nav a img.logo__fuser{
+        margin-left: 15px;
+        width: 40px;
+        height: auto;
+        display: flex;
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 600px){
+    body header nav ul.flex__container li{
+        padding: 6px;   
+    }
+}
+
+@media (max-width: 1020px){
+    body header nav ul.flex__container li a.boton{
+        background-color: map-get($boton, bg-boton);
+        text-decoration: none;
+        padding: 6px 20px 6px 20px;
+        margin: 2px 10px 2px 10px;
+        font-size: nth($font-size, 10 );
+        color: nth($colores, 4 );
+        border-radius: 7px;
+    }
+}
+
+@media (max-width: 800px){
+    body header nav ul.flex__container li a.boton{
+        padding: 4px 10px 4px 10px;
+        margin: 2px 5px 2px 5px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 650px){
+    body header nav ul.flex__container li a.boton{
+        padding: 2px 5px 2px 5px;
+        margin: 2px 3px 2px 3px;
+        font-size: nth($font-size, 11 );
+        border-radius: 4px;
+    }
+}
+
+// body index querys //
+
+@media (max-width: 800px){
+    body main section h1{
+        color: nth($colores, 2 );
+        font-size: nth($font-size, 2 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 600px){
+    body main section h1{
+        color: nth($colores, 2 );
+        font-size: nth($font-size, 3 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 900px){
+    body main div.parrafos div h2{
+        flex-direction: column;
+        font-size: nth($font-size, 5 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 660px){
+    body main div.parrafos div h2{
+        font-size: nth($font-size, 7 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 800px){
+    body main section p{
+        display: flex;
+        color: nth($colores, 2 );;
+        font-family: 'Open Sans', sans-serif;
+        display: block;
+        font-size: nth($font-size, 6 );
+    }
+}    
+
+@media (max-width: 600px){
+    body main section p{
+        font-size: nth($font-size, 8 );
+    }
+}
+
+@media (max-width: 1050px){
+    body main div.parrafos{
+        font-family: 'Open Sans', sans-serif;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        color: nth($colores, 2 );
+    }
+}
+
+@media (max-width: 850px){
+    body main div.parrafos{
+        grid-template-columns:auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media (max-width: 600px){
+    body main div.parrafos{
+        font-size: nth($font-size, 11 );
+    }
+}
+
+// body nosotros querys //
+
+@media (max-width: 800px){
+    body section h1{
+        color: nth($colores, 2 );
+        font-size: nth($font-size, 2 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 600px){
+    body section h1{
+        font-size: nth($font-size, 3 );
+    }
+}
+
+@media (max-width: 900px){
+    body section h2{
+        flex-direction: column;
+        color: nth($colores, 2 );
+        font-size: nth($font-size, 5 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 660px){
+    body section h2{
+        font-size: nth($font-size, 7 );
+    }
+}
+
+@media (max-width: 850px){
+    body section div.parrafos__nosotros{
+        font-family: 'Open Sans', sans-serif;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows: auto auto;
+        grid-gap: 10px;
+        color: nth($colores, 2 );
+    }
+}
+
+@media (max-width: 600px){
+    body section div.parrafos__nosotros{
+        grid-template-columns:auto auto;
+        grid-template-rows: auto auto;
+        font-size: nth($font-size, 11 );
+    }
+}
+
+@media (max-width: 1720px){
+    body main div.galeria__integrantes img{
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1300px){
+    body main div.galeria__integrantes img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 1050px){
+    body main div.galeria__integrantes img{
+        width: 170px;
+    }
+}
+
+@media (max-width: 900px){
+    body main div.galeria__integrantes img{
+        width: 120px;
+    }
+}
+
+@media (max-width: 640px){
+    body main div.galeria__integrantes img{
+        width: 90px;
+    }
+}
+
+// body social querys //
+
+@media (max-width: 1450px){
+    body section div.redes__container{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-auto-rows: auto auto;
+        gap: 40px;
+        border-radius: 6%;
+        padding: 2%
+    }
+}
+
+@media (max-width: 800px){
+    body section div.redes__container{
+        grid-template-columns: 350px;
+        grid-auto-rows: auto auto auto auto;
+        gap: 30px;
+    }
+}
+
+// body agenda querys //
+
+@media (max-width: 680px){
+    body div.agenda__fuser{
+        margin: 10px;
+    }
+}
+
+// body merch querys //
+
+@media (max-width: 1370px){
+    body section div.grid__container__merch section.productos__merch{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1060px){
+    body section div.grid__container__merch section.productos__merch{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 680px){
+    body section div.grid__container__merch section.productos__merch{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+// body escribinos querys //
+
+@media (max-width: 1680px){
+    body section div.grid__contacto{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 860px){
+    body section div.grid__contacto div.mapa div.ubicacion__banda iframe{
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 500px;
+    }
+}
+
+@media (max-width: 580px){
+    body section div.grid__contacto div.mapa div.ubicacion__banda iframe{
+        width: 460px;
+    }
+}
+
+@media (max-width: 860px){
+    body section div.grid__contacto div.datos{
+        font-family: 'Open Sans', sans-serif;
+        background-color: nth($colores, 9 );
+        flex-direction: column;
+        width: 500px;
+        border-radius: 10px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 580px){
+    body section div.grid__contacto div.datos{
+        width: 460px;
+        margin-left: 30px;
+        padding: 5px;
+    }
+}
+
+// footer querys //
+
+@media (max-width: 660px){
+    body main div.parrafos div h2{
+        flex-direction: column;
+        color: nth($colores, 1 );
+        font-size: nth($font-size, 7 );
+        @extend %font;
+    }
+}
+
+@media (max-width: 1800px){
+    body footer{
+        background-color: nth($colores, 6 );
+        height: 140px;
+        }
+}
+
+@media (max-width: 695px){
+    body footer{
+        height: 120px;
+    }
+}
+
+@media (max-width: 600px){
+    body footer a.boton__arriba{
+        display: block;
+        text-align: center;
+        border: 10px;
+        font-size: nth($font-size, 9 );
+    }
+}
+
+@media (max-width: 730px){
+    body footer div{
+        @extend %flex2;
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+body footer div{    
+    @media (max-width: 550px){
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+}
+
+@media (max-width: 730px){
+    body footer div a img{
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        margin: 10%;
+    }
+}
+
+@media (max-width: 850px){
+    body footer div.parrafo__footer{
+        background-color: nth($colores, 4 );
+        height: 15px;
+        margin-top: 25px;
+    }
+}    
+
+@media (max-width: 700px){
+    body footer div.parrafo__footer{
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 850px){
+    body footer div.parrafo__footer p{
+        color: nth($colores, 1 );
+        font-size: nth($font-size, 10 );
+    }
+}
+

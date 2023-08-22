@@ -1,0 +1,76 @@
+// listas //
+
+$colores:
+white,
+rgb(227, 227, 227),
+rgba(255, 255, 255, 0.8),
+black,
+rgb(32, 32, 32),
+rgba(255, 255, 255, 0.161),
+rgb(255, 20, 20),
+deeppink,
+rgba(255, 255, 255, 0.51);
+
+$font-size:
+120px,
+90px,
+55px,
+40px,
+30px,
+24px,
+20px,
+16px,
+15px,
+14px,
+12px;
+
+
+// mapas //
+
+$boton: (
+    bg-boton: rgba(255, 255, 255, 0.8),
+    border-radius: 8px,
+    text-color: black,
+);
+
+    
+
+// extends //
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+%flex3{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+%font{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align:center;
+}
+
+
+// mixin //
+
+@mixin flex ( $flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+

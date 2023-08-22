@@ -182,7 +182,6 @@ header nav ul li {
 /*!  -------Main---------*/
 
 
-
 h1{
     color: rgb(227, 227, 227);
     font-size: 120px;
@@ -259,14 +258,7 @@ h2::first-letter{
 }
 
 
-main section h2 {
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-
-main section p{
+main section h1 p{
     display: flex;
     color: rgb(227, 227, 227);
     font-family: 'Open Sans', sans-serif;
@@ -276,7 +268,7 @@ main section p{
 
 
 @media (max-width: 800px){
-    main section p{
+    main section h1 p{
         display: flex;
         color: rgb(227, 227, 227);
         font-family: 'Open Sans', sans-serif;
@@ -287,7 +279,7 @@ main section p{
 
 
 @media (max-width: 600px){
-    main section p{
+    main section h1 p{
         display: flex;
         color: rgb(227, 227, 227);
         font-family: 'Open Sans', sans-serif;
@@ -295,12 +287,6 @@ main section p{
         font-size: 17px;
     }
 }   
-
-
-main div{
-    color: rgb(227, 227, 227) ;
-    display: block;
-}
 
 
 .parrafos{
@@ -451,14 +437,6 @@ p::selection{
         height: auto;
     }
 }
-
-.inicio__fuser{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
 
 
 /*!  -------Seccion Social---------*/
@@ -653,19 +631,13 @@ p::selection{
 }
 
 
-.grid__contacto p {
-    display: inline-block;
-    color: white;
-}
-
-
 .mapa{
     flex-direction: column;
     align-items: center;
 }
 
 
-h3{
+.datos h3{
     display: inline-block;
 }
 
@@ -878,7 +850,7 @@ footer div img{
 }
 
 
-@media (max-width: 850px){
+@media (max-width: 700px){
     .parrafo__footer{
         background-color: black;
         height: 15px;

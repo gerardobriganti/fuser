@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&display=swap');
+
+*{
+    margin: 2px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: nth($colores, 5 );
+    background-image: url(../img/IMG_8223.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+h1{
+    color: nth($colores, 1 );
+    font-size: nth($font-size, 1 );
+    @extend %font;
+    transition-duration: 3s;
+}
+
+h2{
+    flex-direction: column;
+    color: nth($colores, 1 );
+    font-size: nth($font-size, 4 );
+    @extend %font;
+}
+
+h2::first-letter{
+    color: nth($colores, 8 );
+}
+
+h1::selection{
+    color: nth($colores, 8 );
+}
+
+
+h2::selection{
+    color: nth($colores, 8 );
+}
+
+
+p::selection{
+    color: nth($colores, 8 );
+}

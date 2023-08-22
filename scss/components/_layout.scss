@@ -1,0 +1,132 @@
+body main{
+        section h1{
+            color: nth($colores, 2 );
+            font-size: nth($font-size, 1 );
+            @extend %font;
+        }
+        section p{
+            display: flex;
+            color: nth($colores, 2 );
+            font-family: 'Open Sans', sans-serif;
+            display: block;
+            font-size: nth($font-size, 5 );
+        }
+
+        .parrafos{
+        font-family: 'Open Sans', sans-serif;
+        @extend %flex3;
+        color: nth($colores, 2 );
+            div h2{
+                flex-direction: column;
+                color: nth($colores, 2 );
+                font-size: nth($font-size, 4 );
+                @extend %font;
+            }
+        }
+        .pedalmartin{
+            opacity: 0.8;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            }
+}
+
+// seccion nosotros //
+
+.parrafos__nosotros{
+    font-family: 'Open Sans', sans-serif;
+    @extend %flex3;
+    color: nth($colores, 2 );
+}
+
+.carousel-inner{
+    text-align: center;
+}
+
+
+
+// seccion social //
+
+.redes__container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include flex (flex, space-around,center );
+    flex-wrap: wrap;
+    border-radius: 6%;
+    padding: 2%;
+    div{
+        background-color: rgba(240, 248, 255, 0.561);
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        &:hover{
+            background-color: rgb(240, 248, 255);
+            transform: scale(1.03);
+        }
+    }
+    img{
+        width: 320px;
+        height: auto;
+    }
+}
+
+// seccion agenda //
+
+
+.agenda__fuser{
+    margin: 50px;
+}
+
+
+// seccion merch //
+
+.grid__container__merch{
+    @include flex (flex, space-around,center );
+    .productos__merch{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 20px;
+        margin-left: 150px;
+        margin-right: 150px;
+        text-align: center;
+        div{
+            margin: 20px;
+            width: 305px;
+            height: 430px;
+            margin-bottom: 10px;
+            background-color: nth($colores, 3 );
+            border-radius: 4px;
+            img{
+            width: 300px;
+            height: 330px;
+            }
+            p{
+            margin-top: 5px;
+            }
+            h3{
+                display: inline-block;
+                color: nth($colores, 1 );
+                font-size: nth($font-size, 8 );
+                background-color: nth($colores, 8 );
+                border-radius: 4px;
+                padding: 8px;
+            }
+        }    
+    }
+}
+
+// seccion contacto //
+
+
+    .datos{
+        font-family: 'Open Sans', sans-serif;
+        background-color: nth($colores, 9 );
+        flex-direction: column;
+        width: 500px;
+        border-radius: 10px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        padding: 20px;
+        h3{
+            display: inline-block;
+        }
+    }
