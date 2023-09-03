@@ -8,41 +8,45 @@ body footer{
         }
         display: block;
         margin: 0 auto;
+        padding: 4px;
         text-align: center;
         background-color: nth($colores, 4 );
         width: 90px;
         height: 30px;
         border-radius: 6px;
         margin-top: 8px;
-        margin-bottom: 16px;
+        margin-bottom: 5px;
         font-family: 'Open Sans', sans-serif;
         color: nth($colores, 2 );
         text-decoration: none;
     }
 
-    div{
+    div.redes__footer{
         @extend %flex2;
         height: 30px;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 20%;
+        margin-right: 20%;
         a img{
                 width: 45px;
                 height: 45px;
                 align-items: center;
-                margin: 10%;
+                margin: 30%;
         }
     }    
     div.parrafo__footer{
         background-color: nth($colores, 4 );
-        height: 20px;
-        margin-top: 30px;
-        margin-left: 4%;
-        margin-right: 4%;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-bottom: 10px;
         p{
             color: nth($colores, 1 );
-            margin-bottom: 5px;
+            text-align: center;
+            margin-top: 1px;
+            margin-bottom: 10px;
         }
     }
 }

@@ -1,12 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600;1,800&display=swap");
+body footer div.redes__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+body main .parrafos, .parrafos__nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: start; }
+
+h1, h2, body main section h1, body main .parrafos div h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  text-align: center; }
+
 * {
   margin: 2px;
   padding: 2px;
   box-sizing: border-box; }
 
 body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/IMG_8223.jpg);
   background-color: #202020;
-  background-image: url(../img/IMG_8223.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%; }
@@ -14,19 +30,12 @@ body {
 h1 {
   color: white;
   font-size: 120px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-  font-style: italic;
-  text-align: center; }
+  transition-duration: 3s; }
 
 h2 {
   flex-direction: column;
   color: white;
-  font-size: 40px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-  font-style: italic;
-  text-align: center; }
+  font-size: 40px; }
 
 h2::first-letter {
   color: deeppink; }
@@ -41,6 +50,7 @@ p::selection {
   color: deeppink; }
 
 body header {
+  background-color: black;
   position: sticky;
   top: 0; }
   body header nav {
@@ -51,15 +61,14 @@ body header {
       width: 50px;
       height: auto;
       display: flex;
-      opacity: 0.8; }
+      opacity: 0.7; }
       body header nav a img.logo__fuser:hover {
-        opacity: 1;
-        transform: scale(1.08); }
+        opacity: 1; }
   body header ul.flex__container {
     list-style: none;
     display: flex;
-    margin-top: 10px;
     align-items: center;
+    margin-top: 10px;
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
@@ -74,24 +83,22 @@ body header {
         text-decoration: none;
         padding: 6px 30px 6px 30px;
         margin: 2px 20px 2px 20px;
-        font-size: 17px;
+        font-size: 16px;
         color: black;
-        border-radius: 8px; }
+        border-radius: 8px;
+        transition-duration: 0.3s; }
         body header ul.flex__container li a.boton:hover {
-          background-color: #ff1414;
+          background-color: rgba(255, 255, 255, 0.8);
           font-size: 15px;
-          font-weight: 600;
+          font-weight: 400;
           transform: scale(1.03);
-          color: white;
-          border-radius: 8px; }
+          color: black;
+          border-radius: 8px;
+          box-shadow: 0px 0px 5px 4px #ff1414; }
 
 body main section h1 {
   color: #e3e3e3;
-  font-size: 120px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bolder;
-  font-style: italic;
-  text-align: center; }
+  font-size: 120px; }
 
 body main section p {
   display: flex;
@@ -102,18 +109,11 @@ body main section p {
 
 body main .parrafos {
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
   color: #e3e3e3; }
   body main .parrafos div h2 {
     flex-direction: column;
     color: #e3e3e3;
-    font-size: 40px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bolder;
-    font-style: italic;
-    text-align: center; }
+    font-size: 40px; }
 
 body main .pedalmartin {
   opacity: 0.8;
@@ -122,17 +122,13 @@ body main .pedalmartin {
 
 .parrafos__nosotros {
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
   color: #e3e3e3; }
 
 .carousel-inner {
   text-align: center; }
 
-.galeria__integrantes {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
+body main div.galeria__integrantes {
+  display: flex;
   justify-content: space-around;
   align-items: center; }
 
@@ -143,21 +139,26 @@ body main .pedalmartin {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 6%;
+  border-radius: 3%;
   padding: 2%; }
   .redes__container div {
-    background-color: rgba(240, 248, 255, 0.561);
+    background-color: rgba(240, 248, 255, 0.461);
     text-align: center;
-    font-family: 'Open Sans', sans-serif; }
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    transition-duration: 1s;
+    border-radius: 10px; }
     .redes__container div:hover {
       background-color: aliceblue;
-      transform: scale(1.03); }
+      transform: scale(1.03);
+      border-radius: 2px;
+      font-size: larger; }
   .redes__container img {
     width: 320px;
     height: auto; }
 
 .agenda__fuser {
-  margin: 50px; }
+  margin: 3rem; }
 
 .grid__container__merch {
   display: flex;
@@ -169,6 +170,7 @@ body main .pedalmartin {
     padding: 20px;
     margin-left: 150px;
     margin-right: 150px;
+    margin-bottom: 100px;
     text-align: center; }
     .grid__container__merch .productos__merch div {
       margin: 20px;
@@ -190,28 +192,18 @@ body main .pedalmartin {
         border-radius: 4px;
         padding: 8px; }
 
-.grid__contacto {
-  display: grid;
-  grid-template-columns: 800px 800px;
+.datos {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgba(255, 255, 255, 0.51);
+  flex-direction: column;
+  width: 500px;
+  border-radius: 10px;
   justify-content: space-around;
-  align-items: center; }
-  .grid__contacto .mapa {
-    flex-direction: column;
-    align-items: center; }
-    .grid__contacto .mapa .ubicacion__banda iframe {
-      width: 750px; }
-  .grid__contacto .datos {
-    font-family: 'Open Sans', sans-serif;
-    background-color: rgba(255, 255, 255, 0.51);
-    flex-direction: column;
-    width: 500px;
-    border-radius: 10px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-    padding: 20px; }
-    .grid__contacto .datos h3 {
-      display: inline-block; }
+  align-items: center;
+  margin: 10px;
+  padding: 20px; }
+  .datos h3 {
+    display: inline-block; }
 
 body footer {
   background-color: rgba(255, 255, 255, 0.161);
@@ -219,44 +211,45 @@ body footer {
   body footer a.boton__arriba {
     display: block;
     margin: 0 auto;
+    padding: 4px;
     text-align: center;
     background-color: black;
     width: 90px;
     height: 30px;
     border-radius: 6px;
     margin-top: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
     color: #e3e3e3;
     text-decoration: none; }
     body footer a.boton__arriba:hover {
       color: deeppink;
       font-weight: 600; }
-  body footer div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  body footer div.redes__footer {
     height: 30px;
     margin-top: 5px;
     margin-bottom: 5px;
-    margin-left: 30%;
-    margin-right: 30%; }
-    body footer div a img {
+    margin-left: 20%;
+    margin-right: 20%; }
+    body footer div.redes__footer a img {
       width: 45px;
       height: 45px;
       align-items: center;
-      margin: 10%; }
+      margin: 30%; }
   body footer div.parrafo__footer {
     background-color: black;
-    height: 20px;
-    margin-top: 30px;
-    margin-left: 4%;
-    margin-right: 4%; }
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 10px; }
     body footer div.parrafo__footer p {
       color: white;
-      margin-bottom: 5px; }
+      text-align: center;
+      margin-top: 1px;
+      margin-bottom: 10px; }
 
-@media (max-width: 970px) {
+@media (max-width: 1020px) {
   body {
     background-color: #202020;
     background-image: url(../img/IMG_8223.jpg);
@@ -325,7 +318,7 @@ body footer {
 @media (max-width: 900px) {
   body main div.parrafos div h2 {
     flex-direction: column;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     font-style: italic;
@@ -349,7 +342,7 @@ body footer {
 
 @media (max-width: 600px) {
   body main section p {
-    font-size: 17px; } }
+    font-size: 16px; } }
 
 @media (max-width: 1050px) {
   body main div.parrafos {
@@ -386,7 +379,7 @@ body footer {
   body section h2 {
     flex-direction: column;
     color: #e3e3e3;
-    font-size: 28px;
+    font-size: 30px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     font-style: italic;
@@ -413,47 +406,49 @@ body footer {
 
 @media (max-width: 1720px) {
   body main div.galeria__integrantes img {
-    width: 250px;
+    width: 16rem;
     height: auto; } }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   body main div.galeria__integrantes img {
-    width: 200px; } }
+    width: 14rem; } }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   body main div.galeria__integrantes img {
-    width: 170px; } }
+    width: 11rem; } }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   body main div.galeria__integrantes img {
-    width: 120px; } }
+    width: 9rem; } }
 
-@media (max-width: 640px) {
+@media (max-width: 775px) {
   body main div.galeria__integrantes img {
-    width: 90px; } }
+    width: 7rem; } }
+
+@media (max-width: 600px) {
+  body main div.galeria__integrantes img {
+    width: 6rem; } }
 
 @media (max-width: 1450px) {
   body section div.redes__container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 25rem 25rem;
     grid-auto-rows: auto auto;
-    gap: 40px;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 3rem;
     border-radius: 6%;
     padding: 2%; } }
 
-@media (max-width: 800px) {
+@media (max-width: 915px) {
   body section div.redes__container {
-    grid-template-columns: 350px;
+    grid-template-columns: 23rem;
     grid-auto-rows: auto auto auto auto;
-    gap: 30px; } }
+    gap: 2rem; } }
 
 @media (max-width: 680px) {
   body div.agenda__fuser {
-    margin: 10px; } }
+    margin: 1rem; } }
 
 @media (max-width: 1370px) {
   body section div.grid__container__merch section.productos__merch {
@@ -477,8 +472,6 @@ body footer {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    justify-content: space-around;
-    align-items: center;
     margin-left: auto;
     margin-right: auto; } }
 
@@ -525,9 +518,26 @@ body footer {
     background-color: rgba(255, 255, 255, 0.161);
     height: 140px; } }
 
-@media (max-width: 695px) {
+@media (max-width: 750px) {
   body footer {
-    height: 120px; } }
+    height: 140px;
+    margin-bottom: 10px; } }
+
+@media (max-width: 1350px) {
+  body footer a.boton__arriba {
+    display: block;
+    text-align: center;
+    border: 10px;
+    margin-bottom: 10px;
+    font-size: 16px; } }
+
+@media (max-width: 1000px) {
+  body footer a.boton__arriba {
+    display: block;
+    text-align: center;
+    border: 10px;
+    margin-bottom: 17px;
+    font-size: 16px; } }
 
 @media (max-width: 600px) {
   body footer a.boton__arriba {
@@ -537,7 +547,7 @@ body footer {
     font-size: 15px; } }
 
 @media (max-width: 730px) {
-  body footer div {
+  body footer div.redes__footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -548,7 +558,7 @@ body footer {
     margin-right: 15%; } }
 
 @media (max-width: 550px) {
-  body footer div {
+  body footer div.redes__footer {
     margin-left: 8%;
     margin-right: 8%; } }
 
@@ -557,19 +567,31 @@ body footer {
     width: 35px;
     height: 35px;
     align-items: center;
-    margin: 10%; } }
+    margin: 8%;
+    padding: 5px; } }
+
+@media (max-width: 550px) {
+  body footer div a img {
+    padding: 8px;
+    margin: 5%; } }
 
 @media (max-width: 850px) {
   body footer div.parrafo__footer {
     background-color: black;
-    height: 15px;
-    margin-top: 25px; } }
+    margin-top: 1rem;
+    margin-bottom: 2rem; } }
 
 @media (max-width: 700px) {
   body footer div.parrafo__footer {
-    margin-top: 15px; } }
+    margin-top: 1rem;
+    margin-bottom: 1rem; } }
 
-@media (max-width: 850px) {
+@media (max-width: 720px) {
+  body footer div.parrafo__footer p {
+    color: white;
+    font-size: 15px; } }
+
+@media (max-width: 600px) {
   body footer div.parrafo__footer p {
     color: white;
     font-size: 14px; } }

@@ -7,8 +7,8 @@
 }
 
 body {
+    background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)),url(../img/IMG_8223.jpg);
     background-color: nth($colores, 5 );
-    background-image: url(../img/IMG_8223.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;

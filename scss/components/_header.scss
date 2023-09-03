@@ -1,5 +1,6 @@
 body{
     header{
+        background-color: nth($colores, 4 ) ;
         position: sticky;
         top: 0;
         nav{
@@ -10,10 +11,9 @@ body{
                 width: 50px;
                 height: auto;
                 display: flex;
-                opacity: 0.8;
+                opacity: 0.7;
                 &:hover{
                     opacity: 1;
-                    transform: scale(1.08);
                 }
             }
         }
@@ -33,20 +33,22 @@ body{
                 li{
                     padding: 10px;
                     a.boton{
-                        background-color: map-get($boton, bg-boton);
+                        background-color: nth($colores, 3 );
                         text-decoration: none;
                         padding: 6px 30px 6px 30px;
                         margin: 2px 20px 2px 20px;
                         font-size: nth($font-size, 8 );
-                        color: map-get($boton, text-color);
-                        border-radius: ($boton, border-radius);
+                        color: nth($colores, 4 );
+                        border-radius: 8px;
+                        transition-duration: 0.3s;
                         &:hover{
-                            background-color: nth($colores, 7 );
+                            background-color: nth($colores, 3 );
                             font-size: nth($font-size, 9 );
-                            font-weight: 600;
+                            font-weight: 400;
                             transform: scale(1.03);
-                            color: nth($colores, 1 );
-                            border-radius: 8px;            
+                            color: nth($colores, 4 );
+                            border-radius: 8px;
+                            box-shadow: 0px 0px 5px 4px nth($colores, 7)         
                         }        
                     }
                 }    

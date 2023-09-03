@@ -42,6 +42,12 @@ body main{
     text-align: center;
 }
 
+body main div.galeria__integrantes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 
 // seccion social //
@@ -51,15 +57,20 @@ body main{
     margin-bottom: 50px;
     @include flex (flex, space-around,center );
     flex-wrap: wrap;
-    border-radius: 6%;
+    border-radius: 3%;
     padding: 2%;
     div{
-        background-color: rgba(240, 248, 255, 0.561);
+        background-color: rgba(240, 248, 255, 0.461);
         text-align: center;
         font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        transition-duration: 1s;
+        border-radius: 10px;
         &:hover{
             background-color: rgb(240, 248, 255);
             transform: scale(1.03);
+            border-radius: 2px;
+            font-size: larger;
         }
     }
     img{
@@ -72,7 +83,7 @@ body main{
 
 
 .agenda__fuser{
-    margin: 50px;
+    margin: 3rem;
 }
 
 
@@ -86,6 +97,7 @@ body main{
         padding: 20px;
         margin-left: 150px;
         margin-right: 150px;
+        margin-bottom: 100px;
         text-align: center;
         div{
             margin: 20px;
