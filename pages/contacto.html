@@ -49,16 +49,23 @@
             <div class="datos">
                 <h3>Dejános tus datos</h3>
                 <br>
-                <label for="nombre">Nombre</label>
-                <input type="escribe tu nombre" placeholder="escribe tu nombre">
-                <br>
-                <label for="apellido">Apellido</label>
-                <input type="escribe tu apellido">
-                <br>
-                <label for="email">Mail</label>
-                <input type="email">
-                <label for="paisl">País</label>
-                    <select name="select" id="">
+                <div class="resto__datos">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="escribe tu nombre" placeholder="escribe tu nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="escribe tu apellido" placeholder="escribe tu apellido">
+                    </div>
+                    <div>
+                        <label for="email">Mail</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="paisl">País</label>
+                        <select name="select" id="">
                         <option value="">Argentina</option>
                         <option value="">Brasil</option>
                         <option value="">Chile</option>
@@ -66,12 +73,14 @@
                         <option value="">Inglaterra</option>
                         <option value="">España</option>
                     </select>
+                    </div>
+                </div>
                 <div class="comentarios">
                     <label for="comentarios">
                         Comentarios
                     </label>
                 <br>
-                <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="escribinos aqui"></textarea>
+                <textarea name="comentarios" id="comentarios" cols="50" rows="15" placeholder="escribinos aqui"></textarea>
                 <div class="botones__comentarios">
                     <input type="reset">
                     <input type="submit">

@@ -127,18 +127,43 @@ body main div.galeria__integrantes{
 
 // seccion contacto //
 
+    div.grid__contacto{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+}
 
     .datos{
+        box-shadow: 0 6px 10px nth($colores, 4 );
+        height: 500px;
         font-family: 'Open Sans', sans-serif;
         background-color: nth($colores, 9 );
         flex-direction: column;
         width: 500px;
-        border-radius: 10px;
+        border-radius: 20px;
         justify-content: space-around;
         align-items: center;
         margin: 10px;
         padding: 20px;
         h3{
-            display: inline-block;
+            text-align: center;
+            color: nth($colores, 4 );
         }
+        textarea{
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+    }
+
+    div.resto__datos{
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+
+    div.resto__datos div input{
+        border-radius: 5px;
+    }
+
+    .botones__comentarios input{
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
     }
